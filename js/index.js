@@ -47,8 +47,9 @@ function mapApi(data) {
 }
 
 const addToWishlist = async (id) => {
-  console.log("ok");
+  // console.log("ok");
   let data = await fetch(`${API__URL}/products/${id}`);
+  console.log(id);
   data
     .json()
     .then((product) => {
@@ -73,7 +74,7 @@ generalCard.addEventListener("click", (e) => {
     // let id = e.target.dataset.id;
     // window.open(`./pages/card.html?id=${id}`, "_self");
     let id = e.target.closest(".card").dataset.id;
-    window.open(`./pages/product.html?productId=${id}`, "_self");
+    window.open(`./pages/card.html?id=${id}`, "_self");
   } else if (e.target.className.includes("fa-heart")) {
     let id = e.target.closest(".card").dataset.id;
     addToWishlist(id);
