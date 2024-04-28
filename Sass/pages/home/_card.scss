@@ -26,7 +26,15 @@
   // color: red;
   width: 30%;
 }
-
+.card{
+  position: relative;
+}
+#heart{
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 .card__price {
   color: #46a358;
 }

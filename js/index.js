@@ -36,8 +36,10 @@ function mapApi(data) {
 
               <div class="card__bottom">
                 <h2 class="card__title">${element.title}</h2>
-                <p class="card__price">$${element.price}</p>
-                <i class="fa-regular fa-heart"></i>
+             
+                 <p class="card__price">$${element.price}</p>
+                <i id="heart" class="fa-regular fa-heart"></i>
+               
               </div>
             </div>
         `;
